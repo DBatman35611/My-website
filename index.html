@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekatva Jain</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div></div>
+        <div></div>
+    </header>
+    <div class="content">
+        <div class="left">
+            <div class="abt-para">
+                <h1 class="heading">About Me</h1>
+                <p>I have a passion for marketing and enjoy helping people with their websites and Google search ads. It's exciting to see how a well-planned marketing strategy can make a big difference for a business. I also have a keen interest in engineering, cars, and technology. I love learning about the latest advancements in tech and how they can be applied to everyday life. Whether I'm optimizing a website for better search engine performance or exploring the intricacies of a new car model, I find great joy in these activities. Combining my interests in marketing and tech allows me to stay creative and innovative in my work.</p>
+                <button class="contact-button">Contact</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="img-wrapper">
+                <img src="pfp1.jfif" alt="Profile Picture">
+            </div>
+            <div class="purple-circle"></div>
+            <div class="blue-circle"></div>
+            <div class="red-rectangle"></div>
+        </div>
+    </div>
+    <div id="contact-spot" class="contact-spot">
+        <p>Email: ekatva@ekatvajain.com</p>
+        <p>Phone: +919997545711</p>
+    </div>
+    
+    <script src="scripts.js"></script>
+    <script>
+        // Inline script for scrolling to contact-spot
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactButton = document.querySelector('.contact-button');
+            const contactSpot = document.getElementById('contact-spot');
+
+            contactButton.addEventListener('click', function() {
+                contactSpot.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
